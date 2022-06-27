@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\wip\Tests\Unit;
+namespace Ghostwriter\Finder\Tests\Unit;
 
-use Ghostwriter\wip\Foo;
+use Ghostwriter\Finder\Foo;
 
 /**
- * @coversDefaultClass \Ghostwriter\wip\Foo
+ * @coversDefaultClass \Ghostwriter\Finder\Foo
  *
  * @internal
  *
