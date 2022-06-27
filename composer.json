@@ -1,11 +1,11 @@
 {
-    "name": "ghostwriter/wip",
-    "description": "Here be dragons",
+    "name": "ghostwriter/finder",
+    "description": "🔍 Finder: find files and directories.",
     "license": "BSD-3-Clause",
     "type": "library",
     "keywords": [
         "ghostwriter",
-        "wip"
+        "finder"
     ],
     "authors": [
         {
@@ -15,13 +15,13 @@
             "role": "Developer"
         }
     ],
-    "homepage": "https://github.com/ghostwriter/wip",
+    "homepage": "https://github.com/ghostwriter/finder",
     "support": {
-        "issues": "https://github.com/ghostwriter/wip/issues",
-        "forum": "https://github.com/ghostwriter/wip/discussions",
-        "source": "https://github.com/ghostwriter/wip",
-        "docs": "https://github.com/ghostwriter/wip",
-        "rss": "https://github.com/ghostwriter/wip/releases.atom"
+        "issues": "https://github.com/ghostwriter/finder/issues",
+        "forum": "https://github.com/ghostwriter/finder/discussions",
+        "source": "https://github.com/ghostwriter/finder",
+        "docs": "https://github.com/ghostwriter/finder",
+        "rss": "https://github.com/ghostwriter/finder/releases.atom"
     },
     "funding": [
         {
@@ -31,18 +31,16 @@
     ],
     "require": {
         "php": ">=8.0,<8.2",
-        "ghostwriter/container": "^0.4.0",
-        "ghostwriter/event-dispatcher": "^0.3.2"
+        "ghostwriter/collection": "^0.2.0"
     },
     "require-dev": {
-        "nikic/php-parser": "^4.14.0",
         "phpbench/phpbench": "^1.2.5",
-        "phpunit/phpunit": "^9.5.20",
+        "phpunit/phpunit": "^9.5.21",
         "psalm/plugin-phpunit": "^0.17.0",
-        "rector/rector": "^0.13.5",
+        "rector/rector": "^0.13.6",
         "roave/infection-static-analysis-plugin": "^1.20.0",
         "roave/security-advisories": "dev-latest",
-        "symplify/easy-coding-standard": "^11.0.3",
+        "symplify/easy-coding-standard": "^11.0.5",
         "vimeo/psalm": "^4.23.0"
     },
     "replace": {},
@@ -50,22 +48,14 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Ghostwriter\\wip\\": "src/"
-        },
-        "files": [
-            "src/constants.php",
-            "src/functions.php"
-        ]
+            "Ghostwriter\\Finder\\": "src/"
+        }
     },
     "autoload-dev": {
         "psr-4": {
-            "Ghostwriter\\wip\\Tests\\": "tests/"
+            "Ghostwriter\\Finder\\Tests\\": "tests/"
         }
     },
-    "bin": [
-        "bin/my-other-script",
-        "bin/my-script"
-    ],
     "config": {
         "allow-plugins": {
             "infection/extension-installer": true
